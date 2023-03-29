@@ -1,14 +1,26 @@
 body {
-    background-color: #000000;
+    background-image: url('https://www.design.svgbackgrounds.com/wp-content/uploads/2021/05/endless-constellation-purple-network-background.jpg');
+    background-repeat: repeat;
+    background-size: contain;
   }
 
 button {
-    height: 100px;
-    width: 200px;
+    height: 80px;
+    width: 180px;
     border-radius: 35px;
     text-align: center;
     color: #5cc6d0;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 button:active{

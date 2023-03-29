@@ -2,29 +2,36 @@ body {
     background-color: #000000;
   }
 
-button {
+  button {
     height: 50px;
     width: 100px;
     border-radius: 35px;
     text-align: center;
+    margin: 15px;
     color: #5cc6d0;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
 
-button > h1{
+button > h1 {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
-    color:#5cc6d0
+    color: #5cc6d0;
 }
 
-button:active{
-  background-color: #5cc6d0;
+button:active {
+    background-color: #5cc6d0;
 }
 
-button:active > h1{
-  color:#000000;
+button:active > h1 {
+    color: #000000;
 }
 
 .center {
@@ -33,4 +40,44 @@ button:active > h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
+
+.login-box {
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  height: 30px;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  height: 35px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
